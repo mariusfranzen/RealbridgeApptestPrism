@@ -5,7 +5,11 @@
              Title="{Binding Title}">
 
     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-        <Label Text="Welcome to Xamarin Forms and Prism!" />
+
+        <CollectionView ItemsSource="{Binding Channel}">
+
+        </CollectionView>
+        
     </StackLayout>
 
 </ContentPage>

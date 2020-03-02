@@ -1,6 +1,7 @@
 ﻿using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
+using RealbridgeApptestPrism.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,5 +16,8 @@ namespace RealbridgeApptestPrism.ViewModels
         {
             Title = "Main Page";
         }
+
+        public RadioChannel Channel { get; set; }
+
     }
 }
