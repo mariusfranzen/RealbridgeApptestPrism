@@ -16,6 +16,7 @@ namespace RealbridgeApptestPrism.Model
     {
 
         private string _id;
+        private string _name;
         private Image _image;
         private string _tagline;
         private string _siteUrl;
@@ -32,6 +33,18 @@ namespace RealbridgeApptestPrism.Model
             set
             {
                 SetProperty(ref _id, value);
+            }
+        }
+
+        public string Name
+        {
+            get
+            {
+                return _name;
+            }
+            set
+            {
+                SetProperty(ref _name, value);
             }
         }
 
@@ -104,6 +117,14 @@ namespace RealbridgeApptestPrism.Model
             set
             {
                 SetProperty(ref _musicArtist, value);
+            }
+        }
+
+        public string MusicInfo
+        {
+            get
+            {
+                return MusicArtist + " - " + Music;
             }
         }
 
