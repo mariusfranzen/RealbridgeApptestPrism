@@ -22,7 +22,7 @@ namespace RealbridgeApptestPrism.Controllers
         {
             try
             {
-                HttpResponseMessage response = await _client.GetAsync("http://api.sr.se/");
+                HttpResponseMessage response = await _client.GetAsync("http://api.sr.se/api/v2/channels?format=json");
                 response.EnsureSuccessStatusCode();
                 if (response.IsSuccessStatusCode)
                 {
