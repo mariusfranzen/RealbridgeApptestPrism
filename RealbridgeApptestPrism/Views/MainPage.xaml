@@ -7,7 +7,7 @@
 
     <StackLayout>
         <RefreshView IsRefreshing="{Binding IsRefreshing}" Command="{Binding RefreshCommand}">
-            <CollectionView ItemsSource="{Binding Radio}" SelectionMode="Single">
+            <CollectionView ItemsSource="{Binding Radio}" SelectionMode="Single" SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
                 <CollectionView.Behaviors>
                     <prism:EventToCommandBehavior EventName="SelectionChanged"
                                               Command="{Binding ItemTappedCommand}"/>

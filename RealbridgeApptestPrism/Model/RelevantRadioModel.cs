@@ -18,12 +18,10 @@ namespace RealbridgeApptestPrism.Model
         {
             get
             {
-                Console.WriteLine("General Kenobi!");
                 return _channel;
             }
             set
             {
-                Console.WriteLine("!!!General Kenobi!");
                 SetProperty(ref _channel, value);
             }
         }
@@ -32,12 +30,10 @@ namespace RealbridgeApptestPrism.Model
         {
             get
             {
-                Console.WriteLine("You are a bold one.");
                 return _playlist;
             }
             set
             {
-                Console.WriteLine("!!!You are a bold one.");
                 SetProperty(ref _playlist, value);
             }
         }

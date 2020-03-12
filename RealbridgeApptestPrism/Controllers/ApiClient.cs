@@ -25,7 +25,6 @@ namespace RealbridgeApptestPrism.Controllers
             {
                 string content = await response.Content.ReadAsStringAsync();
                 RadioChannel.Channels.RootObject root = JsonConvert.DeserializeObject<RadioChannel.Channels.RootObject>(content);
-                Console.WriteLine("Successfully retrieved channels");
                 return root.channels;
             }
             return null;
@@ -38,7 +37,6 @@ namespace RealbridgeApptestPrism.Controllers
             {
                 string content = await response.Content.ReadAsStringAsync();
                 RadioMusic.Music.RootObject root = JsonConvert.DeserializeObject<RadioMusic.Music.RootObject>(content);
-                Console.WriteLine("Successfully retrieved playlist from channel with ID " + channel.id);
                 return root.playlist;
             }
             return null;

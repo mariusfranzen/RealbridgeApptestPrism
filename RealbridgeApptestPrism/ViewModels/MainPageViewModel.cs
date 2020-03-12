@@ -19,6 +19,7 @@ namespace RealbridgeApptestPrism.ViewModels
         private bool _isRefreshing;
         private ObservableCollection<RadioInfo> _radio;
         private readonly ApiClient _apiClient = new ApiClient();
+        private RadioInfo _selectedItem;
 
         public bool IsRefreshing
         {
@@ -39,8 +40,18 @@ namespace RealbridgeApptestPrism.ViewModels
             }
             set
             {
-                //Prevents "a property or indexer may not be passed as an out or ref parameter" error
                 SetProperty(ref _radio, value);
+            }
+        }
+        public RadioInfo SelectedItem
+        {
+            get
+            {
+                return _selectedItem;
+            }
+            set
+            {
+                SetProperty(ref _selectedItem, value);
             }
         }
         public ICommand RefreshCommand { get; set; }
@@ -95,7 +106,7 @@ namespace RealbridgeApptestPrism.ViewModels
 
         private void TapItem()
         {
-
+            //TODO: Tap item
         }
 
         private bool CanTapItem()
