@@ -18,7 +18,7 @@ namespace RealbridgeApptestPrism.ViewModels
     {
         private bool _isRefreshing;
         private ObservableCollection<RadioInfo> _radio;
-        private readonly ApiClient _apiClient = new ApiClient();
+        private readonly ApiClient _apiClient;
         private RadioInfo _selectedItem;
 
         public bool IsRefreshing
@@ -63,35 +63,41 @@ namespace RealbridgeApptestPrism.ViewModels
             Title = "Test";
             IsRefreshing = false;
             _radio = new ObservableCollection<RadioInfo>();
+            _apiClient = new ApiClient();
 
             RefreshCommand = new Command(RefreshList, CanRefreshList);
             ItemTappedCommand = new Command(TapItem, CanTapItem);
+
             RefreshList();
         }
 
         private async void RefreshList()
         {
             IsRefreshing = true;
-            List<RadioChannel.Channels.Channel> radioChannels = new List<RadioChannel.Channels.Channel>(await _apiClient.GetChannels());
-            List<RadioMusic.Music.Playlist> radioPlaylists = new List<RadioMusic.Music.Playlist>();
-            ObservableCollection<RadioInfo> radio = new ObservableCollection<RadioInfo>();
-            foreach (var item in radioChannels)
+            var radioChannels = new List<RadioChannel.Channels.Channel>(await _apiClient.GetChannels());
+            var radioPlaylists = new List<RadioMusic.Music.Playlist>();
+            var radio = new ObservableCollection<RadioInfo>();
+            foreach (var channelItem in radioChannels)
             {
-                radioPlaylists.Add(await _apiClient.GetPlaylists(item));
+                radioPlaylists.Add(await _apiClient.GetPlaylists(channelItem));
             }
             foreach (var channelItem in radioChannels)
             {
-                RadioInfo radioInfo = new RadioInfo();
+                var radioInfo = new RadioInfo();
                 radioInfo.Channel = channelItem;
+
+                var found = false;
                 foreach (var musicItem in radioPlaylists)
                 {
+                    if (found)
+                        break;
+
                     if (channelItem.id == musicItem.channel.id)
                     {
                         radioInfo.Playlist = musicItem;
-                        goto Found;
+                        found = true;
                     }
                 }
-            Found:
                 radio.Add(radioInfo);
             }
             Radio = radio;
@@ -111,6 +117,7 @@ namespace RealbridgeApptestPrism.ViewModels
 
         private bool CanTapItem()
         {
+            //TODO: Can tap item?
             return true;
         }
 
