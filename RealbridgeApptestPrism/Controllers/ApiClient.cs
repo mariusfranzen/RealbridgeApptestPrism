@@ -24,12 +24,9 @@ namespace RealbridgeApptestPrism.Controllers
             {
                 HttpResponseMessage response = await _client.GetAsync("http://api.sr.se/api/v2/channels?format=json");
                 response.EnsureSuccessStatusCode();
-                if (response.IsSuccessStatusCode)
-                {
-                    string content = await response.Content.ReadAsStringAsync();
-                    RadioChannel.Channels.RootObject root = JsonConvert.DeserializeObject<RadioChannel.Channels.RootObject>(content);
-                    return root.channels;
-                }
+                string content = await response.Content.ReadAsStringAsync();
+                RadioChannel.Channels.RootObject root = JsonConvert.DeserializeObject<RadioChannel.Channels.RootObject>(content);
+                return root.channels;
             }
             catch(HttpRequestException e)
             {
@@ -47,12 +44,10 @@ namespace RealbridgeApptestPrism.Controllers
             try
             {
                 HttpResponseMessage response = await _client.GetAsync("http://api.sr.se/api/v2/playlists/rightnow?format=json&channelid=" + channel.id);
-                if (response.IsSuccessStatusCode)
-                {
-                    string content = await response.Content.ReadAsStringAsync();
-                    RadioMusic.Music.RootObject root = JsonConvert.DeserializeObject<RadioMusic.Music.RootObject>(content);
-                    return root.playlist;
-                }
+                response.EnsureSuccessStatusCode();
+                string content = await response.Content.ReadAsStringAsync();
+                RadioMusic.Music.RootObject root = JsonConvert.DeserializeObject<RadioMusic.Music.RootObject>(content);
+                return root.playlist;
             }
             catch (HttpRequestException e)
             {
