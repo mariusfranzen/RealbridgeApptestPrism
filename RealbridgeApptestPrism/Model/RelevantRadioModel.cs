@@ -16,18 +16,14 @@ namespace RealbridgeApptestPrism.Model
 
         public RadioChannel.Channels.Channel Channel
         {
-            get
-            { return _channel; }
-            set
-            { SetProperty(ref _channel, value); }
+            get { return _channel; }
+            set { SetProperty(ref _channel, value); }
         }
 
         public RadioMusic.Music.Playlist Playlist
         {
-            get
-            { return _playlist; }
-            set
-            { SetProperty(ref _playlist, value); }
+            get { return _playlist; }
+            set { SetProperty(ref _playlist, value); }
         }
 
     }

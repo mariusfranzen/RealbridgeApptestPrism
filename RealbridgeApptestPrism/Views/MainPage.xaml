@@ -5,38 +5,27 @@
              xmlns:prism="http://prismlibrary.com"
              Title="{Binding Title}">
 
+    <ContentPage.Resources>
+        
+    </ContentPage.Resources>
+
     <StackLayout>
         <RefreshView IsRefreshing="{Binding IsRefreshing}" Command="{Binding RefreshCommand}">
-            <CollectionView ItemsSource="{Binding Radio}" SelectionMode="Single" SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
-                <CollectionView.Behaviors>
-                    <prism:EventToCommandBehavior EventName="SelectionChanged"
+            <ListView ItemsSource="{Binding Radio}" SelectionMode="Single" SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
+                <ListView.Behaviors>
+                    <prism:EventToCommandBehavior EventName="ItemTapped"
                                               Command="{Binding ItemTappedCommand}"/>
-                </CollectionView.Behaviors>
+                </ListView.Behaviors>
 
-                <CollectionView.ItemTemplate>
+                <ListView.ItemTemplate>
                     <DataTemplate>
-                        <Grid HeightRequest="65">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="2*"/>
-                                <RowDefinition Height="1*"/>
-                                <RowDefinition Height="1"/>
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="1*"/>
-                                <ColumnDefinition Width="5*"/>
-                                <ColumnDefinition Width="1*"/>
-                            </Grid.ColumnDefinitions>
-
-                            <Image Source="{Binding Channel.image}" Grid.RowSpan="3" Grid.Column="0"/>
-                            <Label Text="{Binding Channel.name}" Grid.Row="0" Grid.Column="1"/>
-                            <Label Text="{Binding Playlist.song.description}" Grid.Row="1" Grid.Column="1"/>
-                            <BoxView BackgroundColor="Gray" Grid.Row="2" Grid.ColumnSpan="2"/>
-
-                        </Grid>
+                        <ImageCell ImageSource="{Binding Channel.image}" 
+                                   Text="{Binding Channel.name}" TextColor="Black"
+                                   Detail="{Binding Playlist.song.description}"/>
                     </DataTemplate>
-                </CollectionView.ItemTemplate>
+                </ListView.ItemTemplate>
 
-            </CollectionView>
+            </ListView>
         </RefreshView>
     </StackLayout>
 
