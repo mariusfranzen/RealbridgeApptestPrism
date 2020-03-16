@@ -49,3 +49,27 @@ This is the first time I've tried calling API's and such, so in the first commit
     - Removed some debug messenges and such. Nothing interesting happening here
 
 ##### 10. Merge branch 'feature/basic-api-display' into dev
+
+11, 12. Create, Update Readme.md
+        - This is where i made this Readme
+   
+##### new branch feature/general-code-improvement
+
+13. Refined MainPageViewModel.cs
+        - Fixed some small things to make the code cleaner.
+        - Turned some local variables into var's, such as `List<RadioMusic.Music.Playlist> radioPlaylists = new List<RadioMusic.Music.Playlist>();` turned into `var radioPlaylists = new List<RadioMusic.Music.Playlist>();`. Less code, looks more clean, and it's still easy to see what's going on.
+        - Removed the `goto` statement and instead just added a found boolean that breaks the loop if it's true
+        
+14. Added try/catch statements to ApiClient.cs
+        - Like the commit message says. I added some try/catch statements. I also changed `return null;` into `return new RadioMusic.Music.Playlist();` since the application crashes if you return null.
+        
+15. Fixed accidental API removal
+        - I removed the API address in the previous commit for some testing and forgot to put it back.
+        
+16. Added (slightly broken) separator between channels
+        - Added a separator between the channel list. It's not quite wide enough at the moment, but I will look into that later.
+        
+17. GetChannels() and GetPlaylists() now throws an exception if the HttpResponse isn't a success
+        - What the message says. Instead of using `if (response.IsSuccessStatusCode)` i just do `response.EnsureSuccessStatusCode();` so that it throws a (handled) exception if it isn't a success.
+        
+##### 18. Merge branch 'feature/general-code-improvement' into dev
