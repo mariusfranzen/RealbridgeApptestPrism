@@ -29,102 +29,48 @@ namespace RealbridgeApptestPrism.Model
 
                 public string title
                 {
-                    get
-                    {
-                        return _title;
-                    }
-                    set
-                    {
-                        SetProperty(ref _title, value);
-                    }
+                    get { return _title; }
+                    set { SetProperty(ref _title, value); }
                 }
                 public string description
                 {
-                    get
-                    {
-                        return _description;
-                    }
-                    set
-                    {
-                        SetProperty(ref _description, value);
-                    }
+                    get { return _description; }
+                    set { SetProperty(ref _description, value); }
                 }
                 public string artist
                 {
-                    get
-                    {
-                        return _artist;
-                    }
-                    set
-                    {
-                        SetProperty(ref _artist, value);
-                    }
+                    get { return _artist; }
+                    set { SetProperty(ref _artist, value); }
                 }
                 public string composer
                 {
-                    get
-                    {
-                        return _composer;
-                    }
-                    set
-                    {
-                        SetProperty(ref _composer, value);
-                    }
+                    get { return _composer; }
+                    set { SetProperty(ref _composer, value); }
                 }
                 public string albumname
                 {
-                    get
-                    {
-                        return _albumname;
-                    }
-                    set
-                    {
-                        SetProperty(ref _albumname, value);
-                    }
+                    get { return _albumname; }
+                    set { SetProperty(ref _albumname, value); }
                 }
                 public string recordlabel
                 {
-                    get
-                    {
-                        return _recordlabel;
-                    }
-                    set
-                    {
-                        SetProperty(ref _recordlabel, value);
-                    }
+                    get { return _recordlabel; }
+                    set { SetProperty(ref _recordlabel, value); }
                 }
                 public string lyricist
                 {
-                    get
-                    {
-                        return _lyricist;
-                    }
-                    set
-                    {
-                        SetProperty(ref _lyricist, value);
-                    }
+                    get { return _lyricist; }
+                    set { SetProperty(ref _lyricist, value); }
                 }
                 public DateTime starttimeutc
                 {
-                    get
-                    {
-                        return _starttimeutc;
-                    }
-                    set
-                    {
-                        SetProperty(ref _starttimeutc, value);
-                    }
+                    get { return _starttimeutc; }
+                    set { SetProperty(ref _starttimeutc, value); }
                 }
                 public DateTime stoptimeutc
                 {
-                    get
-                    {
-                        return _stoptimeutc;
-                    }
-                    set
-                    {
-                        SetProperty(ref _stoptimeutc, value);
-                    }
+                    get { return _stoptimeutc; }
+                    set { SetProperty(ref _stoptimeutc, value); }
                 }
             }
 
@@ -142,102 +88,48 @@ namespace RealbridgeApptestPrism.Model
 
                 public string title
                 {
-                    get
-                    {
-                        return _title;
-                    }
-                    set
-                    {
-                        SetProperty(ref _title, value);
-                    }
+                    get { return _title; }
+                    set { SetProperty(ref _title, value); }
                 }
                 public string description
                 {
-                    get
-                    {
-                        return _description;
-                    }
-                    set
-                    {
-                        SetProperty(ref _description, value);
-                    }
+                    get { return _description; }
+                    set { SetProperty(ref _description, value); }
                 }
                 public string artist
                 {
-                    get
-                    {
-                        return _artist;
-                    }
-                    set
-                    {
-                        SetProperty(ref _artist, value);
-                    }
+                    get { return _artist; }
+                    set { SetProperty(ref _artist, value); }
                 }
                 public string composer
                 {
-                    get
-                    {
-                        return _composer;
-                    }
-                    set
-                    {
-                        SetProperty(ref _composer, value);
-                    }
+                    get { return _composer; }
+                    set { SetProperty(ref _composer, value); }
                 }
                 public string albumname
                 {
-                    get
-                    {
-                        return _albumname;
-                    }
-                    set
-                    {
-                        SetProperty(ref _albumname, value);
-                    }
+                    get { return _albumname; }
+                    set { SetProperty(ref _albumname, value); }
                 }
                 public string recordlabel
                 {
-                    get
-                    {
-                        return _recordlabel;
-                    }
-                    set
-                    {
-                        SetProperty(ref _recordlabel, value);
-                    }
+                    get { return _recordlabel; }
+                    set { SetProperty(ref _recordlabel, value); }
                 }
                 public string lyricist
                 {
-                    get
-                    {
-                        return _lyricist;
-                    }
-                    set
-                    {
-                        SetProperty(ref _lyricist, value);
-                    }
+                    get { return _lyricist; }
+                    set { SetProperty(ref _lyricist, value); }
                 }
                 public DateTime starttimeutc
                 {
-                    get
-                    {
-                        return _starttimeutc;
-                    }
-                    set
-                    {
-                        SetProperty(ref _starttimeutc, value);
-                    }
+                    get { return _starttimeutc; }
+                    set { SetProperty(ref _starttimeutc, value); }
                 }
                 public DateTime stoptimeutc
                 {
-                    get
-                    {
-                        return _stoptimeutc;
-                    }
-                    set
-                    {
-                        SetProperty(ref _stoptimeutc, value);
-                    }
+                    get { return _stoptimeutc; }
+                    set { SetProperty(ref _stoptimeutc, value); }
                 }
             }
 
@@ -255,102 +147,48 @@ namespace RealbridgeApptestPrism.Model
 
                 public string title
                 {
-                    get
-                    {
-                        return _title;
-                    }
-                    set
-                    {
-                        SetProperty(ref _title, value);
-                    }
+                    get { return _title; }
+                    set { SetProperty(ref _title, value); }
                 }
                 public string description
                 {
-                    get
-                    {
-                        return _description;
-                    }
-                    set
-                    {
-                        SetProperty(ref _description, value);
-                    }
+                    get { return _description; }
+                    set { SetProperty(ref _description, value); }
                 }
                 public string artist
                 {
-                    get
-                    {
-                        return _artist;
-                    }
-                    set
-                    {
-                        SetProperty(ref _artist, value);
-                    }
+                    get { return _artist; }
+                    set { SetProperty(ref _artist, value); }
                 }
                 public string composer
                 {
-                    get
-                    {
-                        return _composer;
-                    }
-                    set
-                    {
-                        SetProperty(ref _composer, value);
-                    }
+                    get { return _composer; }
+                    set { SetProperty(ref _composer, value); }
                 }
                 public string albumname
                 {
-                    get
-                    {
-                        return _albumname;
-                    }
-                    set
-                    {
-                        SetProperty(ref _albumname, value);
-                    }
+                    get { return _albumname; }
+                    set { SetProperty(ref _albumname, value); }
                 }
                 public string recordlabel
                 {
-                    get
-                    {
-                        return _recordlabel;
-                    }
-                    set
-                    {
-                        SetProperty(ref _recordlabel, value);
-                    }
+                    get { return _recordlabel; }
+                    set { SetProperty(ref _recordlabel, value); }
                 }
                 public string lyricist
                 {
-                    get
-                    {
-                        return _lyricist;
-                    }
-                    set
-                    {
-                        SetProperty(ref _lyricist, value);
-                    }
+                    get { return _lyricist; }
+                    set { SetProperty(ref _lyricist, value); }
                 }
                 public DateTime starttimeutc
                 {
-                    get
-                    {
-                        return _starttimeutc;
-                    }
-                    set
-                    {
-                        SetProperty(ref _starttimeutc, value);
-                    }
+                    get { return _starttimeutc; }
+                    set { SetProperty(ref _starttimeutc, value); }
                 }
                 public DateTime stoptimeutc
                 {
-                    get
-                    {
-                        return _stoptimeutc;
-                    }
-                    set
-                    {
-                        SetProperty(ref _stoptimeutc, value);
-                    }
+                    get { return _stoptimeutc; }
+                    set { SetProperty(ref _stoptimeutc, value); }
                 }
             }
 
@@ -361,25 +199,13 @@ namespace RealbridgeApptestPrism.Model
 
                 public int id
                 {
-                    get
-                    {
-                        return _id;
-                    }
-                    set
-                    {
-                        SetProperty(ref _id, value);
-                    }
+                    get { return _id; }
+                    set { SetProperty(ref _id, value); }
                 }
                 public string name
                 {
-                    get
-                    {
-                        return _name;
-                    }
-                    set
-                    {
-                        SetProperty(ref _name, value);
-                    }
+                    get { return _name; }
+                    set { SetProperty(ref _name, value); }
                 }
             }
 
@@ -392,47 +218,23 @@ namespace RealbridgeApptestPrism.Model
 
                 public Previoussong previoussong
                 {
-                    get
-                    {
-                        return _previoussong;
-                    }
-                    set
-                    {
-                        SetProperty(ref _previoussong, value);
-                    }
+                    get { return _previoussong; }
+                    set { SetProperty(ref _previoussong, value); }
                 }
                 public Song song
                 {
-                    get
-                    {
-                        return _song;
-                    }
-                    set
-                    {
-                        SetProperty(ref _song, value);
-                    }
+                    get { return _song; }
+                    set { SetProperty(ref _song, value); }
                 }
                 public Nextsong nextsong
                 {
-                    get
-                    {
-                        return _nextsong;
-                    }
-                    set
-                    {
-                        SetProperty(ref _nextsong, value);
-                    }
+                    get { return _nextsong; }
+                    set { SetProperty(ref _nextsong, value); }
                 }
                 public Channel channel
                 {
-                    get
-                    {
-                        return _channel;
-                    }
-                    set
-                    {
-                        SetProperty(ref _channel, value);
-                    }
+                    get { return _channel; }
+                    set { SetProperty(ref _channel, value); }
                 }
             }
 
@@ -442,14 +244,8 @@ namespace RealbridgeApptestPrism.Model
 
                 public Playlist playlist
                 {
-                    get
-                    {
-                        return _playlist;
-                    }
-                    set
-                    {
-                        SetProperty(ref _playlist, value);
-                    }
+                    get { return _playlist; }
+                    set { SetProperty(ref _playlist, value); }
                 }
             }
         }

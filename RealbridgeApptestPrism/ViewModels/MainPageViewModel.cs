@@ -23,36 +23,18 @@ namespace RealbridgeApptestPrism.ViewModels
 
         public bool IsRefreshing
         {
-            get
-            {
-                return _isRefreshing;
-            }
-            set
-            {
-                SetProperty(ref _isRefreshing, value);
-            }
+            get { return _isRefreshing; }
+            set { SetProperty(ref _isRefreshing, value); }
         }
         public ObservableCollection<RadioInfo> Radio
         {
-            get
-            {
-                return _radio;
-            }
-            set
-            {
-                SetProperty(ref _radio, value);
-            }
+            get { return _radio; }
+            set { SetProperty(ref _radio, value); }
         }
         public RadioInfo SelectedItem
         {
-            get
-            {
-                return _selectedItem;
-            }
-            set
-            {
-                SetProperty(ref _selectedItem, value);
-            }
+            get { return _selectedItem; }
+            set { SetProperty(ref _selectedItem, value); }
         }
         public ICommand RefreshCommand { get; set; }
         public ICommand ItemTappedCommand { get; set; }

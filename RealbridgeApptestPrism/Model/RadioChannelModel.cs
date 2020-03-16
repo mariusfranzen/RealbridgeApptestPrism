@@ -23,36 +23,18 @@ namespace RealbridgeApptestPrism.Model
 
                 public int id
                 {
-                    get
-                    {
-                        return _id;
-                    }
-                    set
-                    {
-                        SetProperty(ref _id, value);
-                    }
+                    get { return _id; }
+                    set { SetProperty(ref _id, value); }
                 }
                 public string url
                 {
-                    get
-                    {
-                        return _url;
-                    }
-                    set
-                    {
-                        SetProperty(ref _url, value);
-                    }
+                    get { return _url; }
+                    set { SetProperty(ref _url, value); }
                 }
                 public string statkey
                 {
-                    get
-                    {
-                        return _statkey;
-                    }
-                    set
-                    {
-                        SetProperty(ref _statkey, value);
-                    }
+                    get { return _statkey; }
+                    set { SetProperty(ref _statkey, value); }
                 }
             }
 
@@ -72,124 +54,58 @@ namespace RealbridgeApptestPrism.Model
 
                 public string image
                 {
-                    get
-                    {
-                        return _image;
-                    }
-                    set
-                    {
-                        SetProperty(ref _image, value);
-                    }
+                    get { return _image; }
+                    set { SetProperty(ref _image, value); }
                 }
                 public string imagetemplate
                 {
-                    get
-                    {
-                        return _imagetemplate;
-                    }
-                    set
-                    {
-                        SetProperty(ref _imagetemplate, value);
-                    }
+                    get { return _imagetemplate; }
+                    set { SetProperty(ref _imagetemplate, value); }
                 }
                 public string color
                 {
-                    get
-                    {
-                        return _color;
-                    }
-                    set
-                    {
-                        SetProperty(ref _color, value);
-                    }
+                    get { return _color; }
+                    set { SetProperty(ref _color, value); }
                 }
                 public string tagline
                 {
-                    get
-                    {
-                        return _tagline;
-                    }
-                    set
-                    {
-                        SetProperty(ref _tagline, value);
-                    }
+                    get { return _tagline; }
+                    set { SetProperty(ref _tagline, value); }
                 }
                 public string siteurl
                 {
-                    get
-                    {
-                        return _siteurl;
-                    }
-                    set
-                    {
-                        SetProperty(ref _siteurl, value);
-                    }
+                    get { return _siteurl; }
+                    set { SetProperty(ref _siteurl, value); }
                 }
                 public Liveaudio liveaudio
                 {
-                    get
-                    {
-                        return _liveaudio;
-                    }
-                    set
-                    {
-                        SetProperty(ref _liveaudio, value);
-                    }
+                    get { return _liveaudio; }
+                    set { SetProperty(ref _liveaudio, value); }
                 }
                 public string scheduleurl
                 {
-                    get
-                    {
-                        return _scheduleurl;
-                    }
-                    set
-                    {
-                        SetProperty(ref _scheduleurl, value);
-                    }
+                    get { return _scheduleurl; }
+                    set { SetProperty(ref _scheduleurl, value); }
                 }
                 public string channeltype
                 {
-                    get
-                    {
-                        return _channeltype;
-                    }
-                    set
-                    {
-                        SetProperty(ref _channeltype, value);
-                    }
+                    get { return _channeltype; }
+                    set { SetProperty(ref _channeltype, value); }
                 }
                 public string xmltvid
                 {
-                    get
-                    {
-                        return _xmltvid;
-                    }
-                    set
-                    {
-                        SetProperty(ref _xmltvid, value);
-                    }
+                    get { return _xmltvid; }
+                    set { SetProperty(ref _xmltvid, value); }
                 }
                 public int id
                 {
-                    get
-                    {
-                        return _id;
-                    }
-                    set
-                    {
-                        SetProperty(ref _id, value);
-                    }
+                    get { return _id; }
+                    set { SetProperty(ref _id, value); }
                 }
                 public string name
                 {
-                    get
-                    {
-                        return _name;
-                    }
-                    set
-                    {
-                        SetProperty(ref _name, value);
-                    }
+                    get { return _name; }
+                    set { SetProperty(ref _name, value); }
                 }
 
             }
@@ -204,58 +120,28 @@ namespace RealbridgeApptestPrism.Model
 
                 public int page
                 {
-                    get
-                    {
-                        return _page;
-                    }
-                    set
-                    {
-                        SetProperty(ref _page, value);
-                    }
+                    get { return _page; }
+                    set { SetProperty(ref _page, value); }
                 }
                 public int size
                 {
-                    get
-                    {
-                        return _size;
-                    }
-                    set
-                    {
-                        SetProperty(ref _size, value);
-                    }
+                    get { return _size; }
+                    set { SetProperty(ref _size, value); }
                 }
                 public int totalhits
                 {
-                    get
-                    {
-                        return _totalhits;
-                    }
-                    set
-                    {
-                        SetProperty(ref _totalhits, value);
-                    }
+                    get { return _totalhits; }
+                    set { SetProperty(ref _totalhits, value); }
                 }
                 public int totalpages
                 {
-                    get
-                    {
-                        return _totalpages;
-                    }
-                    set
-                    {
-                        SetProperty(ref _totalpages, value);
-                    }
+                    get { return _totalpages; }
+                    set { SetProperty(ref _totalpages, value); }
                 }
                 public string nextpage
                 {
-                    get
-                    {
-                        return _nextpage;
-                    }
-                    set
-                    {
-                        SetProperty(ref _nextpage, value);
-                    }
+                    get { return _nextpage; }
+                    set { SetProperty(ref _nextpage, value); }
                 }
             }
 
@@ -267,36 +153,18 @@ namespace RealbridgeApptestPrism.Model
 
                 public string copyright
                 {
-                    get
-                    {
-                        return _copyright;
-                    }
-                    set
-                    {
-                        SetProperty(ref _copyright, value);
-                    }
+                    get { return _copyright; }
+                    set { SetProperty(ref _copyright, value); }
                 }
                 public List<Channel> channels
                 {
-                    get
-                    {
-                        return _channels;
-                    }
-                    set
-                    {
-                        SetProperty(ref _channels, value);
-                    }
+                    get { return _channels; }
+                    set { SetProperty(ref _channels, value); }
                 }
                 public Pagination pagination
                 {
-                    get
-                    {
-                        return _pagination;
-                    }
-                    set
-                    {
-                        SetProperty(ref _pagination, value);
-                    }
+                    get { return _pagination; }
+                    set { SetProperty(ref _pagination, value); }
                 }
             }
         }
